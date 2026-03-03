@@ -1,28 +1,52 @@
-# eclipse
-bin
+
+# Eclipse / VSCode
+bin/
 *.launch
-.settings
-.metadata
+.settings/
+.vscode/
+.metadata/
 .classpath
 .project
+eclipse/
 
-# idea
-out
+# IntelliJ IDEA
+out/
+.idea/
+*.iml
 *.ipr
 *.iws
-*.iml
-.idea
 
-# gradle
-build
-.gradle
+# Build tools / outputs
 
-# other
-eclipse
-run
-run-data
-logs
+# Gradle
+.gradle/
+build/
+classes/
 
-# Files from Forge MDK
+# Runtime / dev folders
+run/
+run-data/
+logs/
+
+# Forge MDK
 forge*changelog.txt
-/src/generated/resources/.cache/
+
+# Generated resources cache (root)
+src/generated/resources/.cache/
+
+# Generated resources (all versions)
+versions/*/src/
+
+# Build folders (all versions)
+versions/*/build/
+# OS junk
+
+*.DS_Store
+
+# Java crash / profiling logs
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
